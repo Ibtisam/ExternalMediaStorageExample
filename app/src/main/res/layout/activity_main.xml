@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/filesB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:onClick="filesWBClicked"
+            android:text="Write Files"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/filesRB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:onClick="filesRBClicked"
+            android:text="Read Files"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/delB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:onClick="delBClicked"
+            android:text="Del Files"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/resetB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:onClick="resetBClicked"
+            android:text="Reset"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>
